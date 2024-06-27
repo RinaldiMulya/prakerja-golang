@@ -1,0 +1,34 @@
+GET http://localhost:8080/products HTTP/1.1
+###
+
+POST http://localhost:8080/products/ HTTP/1.1
+content-type: application/json
+
+{
+    "Status": "Success",
+    "data":[
+        {
+            "id": 1,
+            "name": "Kemeja Tidur",
+            "price": 500000
+        },
+        {
+            "id": 2,
+            "name": "Baju Renang",
+            "price": 10000
+        }
+        {
+            "id": 3,
+            "name": "Baju Bola",
+            "price": 9999999
+        }
+
+    ]
+}
+
+###
+DELETE http://localhost:8080/products HTTP/1.1
+{
+    "Status": "Success",
+    "data": null
+}
